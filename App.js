@@ -4,17 +4,10 @@ import { StyleSheet, Text, View , TextInput, Button} from 'react-native';
 export default function App() {
   const [textOutput, setTextOutput] = useState('Open up App.js to start working on your app!')
   return (
-    <View style={{padding: 40, flexDirection: 'row'}}>
-      <View style={{backgroundColor: 'red', color:'white', width: 100, height: 100, justifyContent: 'center', alignItems:'center'}}>
-        <Text>1</Text>
-      </View>
-
-      <View style={{backgroundColor: 'blue', color: 'white', width: 100, height: 100, justifyContent: 'center', alignItems:'center'}}>
-        <Text>2</Text>
-      </View>
-
-      <View style={{backgroundColor: 'green', color: 'white', width: 100, height: 100, justifyContent: 'center', alignItems:'center'}}>
-        <Text>3</Text>
+    <View style={{padding: 40}}>
+      <View style={{flexDirection:"row", justifyContent:"center", alignItems: "center"}}>
+        <TextInput placeholder="Course Goal" style={{width: '80%', borderWidth: 1, borderColor: 'black', padding:10}} />
+        <Button title="Add" />
       </View>
     </View>
   );
